@@ -3,7 +3,7 @@ from collections import deque
 from Queue import PriorityQueue
 
 
-f=open('test43.txt','r')
+f=open('input.txt','r')
 algo=f.readline()
 word=algo.strip()
 l=[]
@@ -111,7 +111,7 @@ def dfs(graph, src, dest):
     
     frontier = deque()
     cost=[]
-    out=open('output6.txt','w')
+    out=open('output.txt','w')
    # c=0
     copy=''
     shortestpath = (src, )
@@ -146,7 +146,7 @@ def ucs(graph, start, end):
     parent[start] = None
     pathcost = {}
     pathcost[start] = 0
-    out=open('output2.txt','w')
+    out=open('output.txt','w')
     c=0
     copy=''
     path=[]
@@ -204,7 +204,7 @@ def astar(graph, start, end):
     pathcost = {}
     parent[start] = None
     pathcost[start] = 0
-    out=open('output2.txt','w')
+    out=open('output.txt','w')
     c=0
     copy=''
     path=[]
