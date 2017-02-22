@@ -2,7 +2,6 @@ from Queue import *
 from collections import deque
 from Queue import PriorityQueue
 
-
 f=open('input.txt','r')
 algo=f.readline()
 word=algo.strip()
